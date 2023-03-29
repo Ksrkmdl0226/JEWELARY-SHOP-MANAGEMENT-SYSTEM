@@ -1,0 +1,421 @@
+{% csrf_token %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="/static/web/bootCJ/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/web/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/static/web/css/style1.css">
+    <link rel="stylesheet" type="text/css"
+        href="/static/web/bootstrap-icons-1.8.1/bootstrap-icons-1.8.1/bootstrap-icons.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body class="back">
+    <section>
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-brand text-outline-danger  fs-2 fw-bold  fst-italic" id="nav1" href="#">Jewellery
+                    <sub>Shop Management</sub>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- e-left s-right x-center -->
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active fs-5 " aria-current="page" href="/index/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  active fs-5" href="/Aboutus/">About Us</a>
+
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active fs-5" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Services
+                            </a>
+                            <ul class="dropdown-menu bg-warning" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="/purity/">Purity</a></li>
+                                <li><a class="dropdown-item" href="/purity/">Quality</a></li>
+                                <li><a class="dropdown-item" href="/purity/">Stylish</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  active fs-5" href="/Gold/">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fs-5" href="/welcome/">Logout</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </section>
+
+
+    <section class="pt-4">
+
+
+        <div class="container pt-4">
+            <div class="row flex-center">
+                <div class="col-12 mb-10">
+                    <div class="d-flex align-items-center flex-column">
+                        <h1 class="fw-normal fw-bold text-dark pt-4" id="cd22"> With an outstanding style, only for you
+                        </h1><br>
+                        <h1 class="fs-4 fs-lg-8 fs-md-6 fw-bold" id="cd22">Exclusively designed for you</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============================================-->
+    <!-- <section> begin ============================-->
+    <section class="pt-4" id="kt">
+        <div class="container-fluid border border-danger p-5 " style="background-image: url(/static/web/img/rg1.gif);">
+            <div class="row h-100">
+                <div class="col-lg-7 mx-auto text-center  mb-2">
+                    <h5 class="fw-bold fs-3 fs-lg-5 lh-sm text-light">Best Deals</h5>
+                </div>
+                <div class="col-12">
+                    <div class="carousel1 slide" id="carouselBestDeals1" data-bs-touch="false" data-bs-interval="false">
+                        <div class="carousel-inner">
+                            <div class="carousel-item1 active" data-bs-interval="5000">
+                                <div class="row align-items-center g-2" id="products1">
+
+                                    <!-- carasol1 -->
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <div class="row h-100 align-items-center g-2">
+                                    
+                                </div>
+                            </div>
+                            <!-- carasol2 -->
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <div class="row h-100 align-items-center g-2">
+                                   
+                                </div>
+                            </div>
+                            <!-- carasol3 -->
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div><!-- end of .container-->
+    </section><br><br><br><!-- <section> close ============================-->
+    <!-- ============================================-->
+
+
+    <section>
+        <div class="container border border-dark mb-3 pb-5 text-light" id="crs">
+            <div class="row h-100 ">
+                <div class="col-md-4">
+                    <div class="bg-300 p-4 h-100 d-flex flex-column justify-content-center">
+                        <h1 class="fw-semi-bold lh-sm fs-2 fs-lg-5 fs-xl-6 fst-italic">Diamond & Ruby Ring</h1><br>
+                        <p class="mb-5 fs-3">We provide the top formal apparel package to make your job look confident
+                            and comfortable. Stay connect.</p>
+                        <div class="d-grid gap-2 d-md-block"><a class="btn btn-lg btn-dark" href="/shoping/"
+                                role="button">Explore Collection</a></div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="card  text-white mt-5">
+                        <img class="card-img " height="500" width="600" src="/static/web/img/dr2.gif" alt="..." />
+                        <a class="stretched-link" href="#kt"></a>
+                    </div>
+                </div>
+            </div>
+        </div><!-- end of .container-->
+    </section><!-- <section> close ============================-->
+    <!-- daimond section -->
+
+    <!-- carasol 2 part -->
+
+    <section class="pt-4">
+        <div class="container-fluid border border-danger p-5 " style="background-image: url(/static/web/img/di.gif);">
+            <div class="row h-100">
+                <div class="col-lg-7 mx-auto text-center  mb-2">
+                    <h5 class="fw-bold fs-3 fs-lg-5 lh-sm text-light">Valentine's Special Deals</h5>
+                </div>
+                <div class="col-12">
+                    <div class="carousel slide" id="carouselBestDeals1" data-bs-touch="false" data-bs-interval="false">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="3000">
+                                <div class="row align-items-center g-2">
+                                    <div class="col-sm-6 col-md-3 mb-3">
+                                        <div class="card card-span text-white"><img class="img-fluid "
+                                                src="/static/web/img/cp4.jpg" alt="..." height="650" width="350" />
+                                            <div class="card-img-overlay ps-0"> </div>
+                                            <div class="card-body ps-0 bg-200">
+                                                <h5 class="fw-bold text-dark">Platinum Couple Ring</h5>
+                                                <div class="fw-bold"><span
+                                                        class="text-danger text-decoration-line-through">Rs.34.000</span>
+                                                    <span class="text-primary">Rs.30.000</span>
+                                                </div>
+                                            </div><a class="stretched-link" href="#"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3 mb-3">
+                                        <div class="card card-span text-white"><img class="img-fluid "
+                                                src="/static/web/img/cp3.jpg" alt="..." height="650" width="350" />
+                                            <div class="card-img-overlay ps-0"> </div>
+                                            <div class="card-body ps-0 bg-200">
+                                                <h5 class="fw-bold text-dark">MultiDaimond Ring</h5>
+                                                <div class="fw-bold"><span
+                                                        class="text-danger text-decoration-line-through">Rs.24.000</span>
+                                                    <span class="text-primary">Rs.22.000</span>
+                                                </div>
+                                            </div><a class="stretched-link" href="#"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3 mb-3">
+                                        <div class="card card-span text-white"><img class="img-fluid "
+                                                src="/static/web/img/cpr1.jpg" alt="..." height="650" width="350" />
+                                            <div class="card-img-overlay ps-0"> </div>
+                                            <div class="card-body ps-0 bg-200">
+                                                <h5 class="fw-bold text-dark">Couple Name Ring</h5>
+                                                <div class="fw-bold"><span
+                                                        class="text-danger text-decoration-line-through">Rs.26.000</span>
+                                                    <span class="text-primary">Rs.19.000</span>
+                                                </div>
+                                            </div><a class="stretched-link" href="#"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3 mb-3">
+                                        <div class="card card-span text-white"><img class="img-fluid "
+                                                src="/static/web/img/cp6.jpg" alt="..." height="650" width="350" />
+                                            <div class="card-img-overlay ps-0"> </div>
+                                            <div class="card-body ps-0 bg-200">
+                                                <h5 class="fw-bold text-dark">Rose Gold Ring</h5>
+                                                <div class="fw-bold"><span
+                                                        class="text-danger text-decoration-line-through">Rs.45.000</span>
+                                                    <span class="text-primary">Rs.40.000</span>
+                                                </div>
+                                            </div><a class="stretched-link" href="#"></a>
+                                        </div>
+                                    </div>
+
+                                    <!-- carasol1 -->
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <div class="row h-100 align-items-center g-2">
+                                    <div class="col-sm-6 col-md-3 mb-3">
+                                        <div class="card card text-white"><img class="img-fluid "
+                                                src="/static/web/img/brs.jpg" alt="..." height="650" width="350" />
+                                            <div class="card-img-overlay ps-0"> </div>
+                                            <div class="card-body ps-0 bg-200">
+                                                <h5 class="fw-bold text-dark">Green Ruby Single Bangle </h5>
+                                                <div class="fw-bold"><span
+                                                        class="text-danger text-decoration-line-through">Rs.98.000</span>
+                                                    <span class="text-primary">Rs.92.000</span>
+                                                </div>
+                                            </div><a class="stretched-link" href="#"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3 mb-3">
+                                        <div class="card card text-white"><img class="img-fluid mt-3 mb-3"
+                                                src="/static/web/img/brs1.jpg" alt="..." height="650" width="350" />
+                                            <div class="card-img-overlay ps-0"> </div>
+                                            <div class="card-body ps-0 bg-200">
+                                                <h5 class="fw-bold text-dark">Red Ruby Single Bangle</h5>
+                                                <div class="fw-bold"><span
+                                                        class="text-danger text-decoration-line-through ">Rs.78.000</span>
+                                                    <span class="text-primary">Rs.75.000</span>
+                                                </div>
+                                            </div><a class="stretched-link" href="#"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3 mb-3">
+                                        <div class="card card text-white"><img class="img-fluid mt-3 mb-2"
+                                                src="/static/web/img/brs2.jpg" alt="..." height="650" width="350" />
+                                            <div class="card-img-overlay ps-0"> </div>
+                                            <div class="card-body ps-0 bg-200">
+                                                <h5 class="fw-bold text-dark">MultiDaimond Single Bangle</h5>
+                                                <div class="fw-bold"><span
+                                                        class="text-danger text-decoration-line-through">Rs.88.000</span>
+                                                    <span class="text-primary">Rs.82.000</span>
+                                                </div>
+                                            </div><a class="stretched-link" href="#"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3 mb-3">
+                                        <div class="card card text-white"><img class="img-fluid"
+                                                src="/static/web/img/brs4.jpg" alt="..." height="650" width="350" />
+                                            <div class="card-img-overlay ps-0"> </div>
+                                            <div class="card-body ps-0 bg-200">
+                                                <h5 class="fw-bold text-dark">Classic Single Bangle</h5>
+                                                <div class="fw-bold"><span
+                                                        class="text-danger text-decoration-line-through">Rs.65.000</span>
+                                                    <span class="text-primary">Rs.61.000</span>
+                                                </div>
+                                            </div><a class="stretched-link" href="#"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- carasol2 -->
+
+
+                            <div class="row"><button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselBestDeals1" data-bs-slide="prev"><span
+                                        class="carousel-control-prev-icon" aria-hidden="true"></span><span
+                                        class="visually-hidden">Previous</span></button><button
+                                    class="carousel-control-next" type="button" data-bs-target="#carouselBestDeals1"
+                                    data-bs-slide="next"><span class="carousel-control-next-icon"
+                                        aria-hidden="true"></span><span class="visually-hidden">Next </span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div><!-- end of .container-->
+
+        <script src="/static/web/bootCJ/js/bootstrap.min.js"></script>
+    </section><br><br><br><!-- <section> close ============================-->
+    <!-- ============================================-->
+
+    <section>
+        <div class="container border border-dark mb-3 pb-5 text-light" id="crs">
+            <div class="row h-100 ">
+
+                <div class="col-md-8">
+                    <div class="card  text-white mt-5">
+                        <img class="card-img rounded-3" height="400" width="500" src="/static/web/img/bg.gif"
+                            alt="..." />
+
+                        <a class="stretched-link" href="/shoping/"></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="bg-300 p-4 h-100 d-flex flex-column justify-content-center">
+                        <h1 class="fw-semi-bold lh-sm fs-2 fs-lg-5 fs-xl-6 fst-italic">Standard Collection</h1><br>
+                        <p class="mb-5 fs-3">We provide the top formal apparel package to make your job look confident
+                            and comfortable. Stay connect.</p>
+                        <div class="d-grid gap-2 d-md-block"><a class="btn btn-lg btn-dark" href="/shoping/"
+                                role="button">Explore Collection</a></div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- end of .container-->
+    </section><!-- <section> close ============================-->
+
+        <footer id="footer">
+
+            <div class="footer-top">
+                <div class="container align-items-center">
+                    <div class="row">
+    
+                        <div class="col-4" style="padding-left: 10%;">
+                            <h3>Company</h3>
+                            <p>
+                                Info <br>
+                                Belagavi <br><br>
+                                <strong>Phone:</strong> +91 123456789<br>
+                                <strong>Email:</strong> info.com<br>
+                            </p>
+                        </div>
+    
+                        <div class="col-lg-4  footer-links mb-2 pb-5" style="padding-left: 10%;">
+                            <h3>Useful Links</h3>
+                            <ul class="pt-4">
+                                <li><i class="bx bx-chevron-right"></i> <a href="/index/">Home</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="/Aboutus/">About us</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="/purity/">Services</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="/Aboutus/">Terms of service</a></li>
+                            </ul>
+                        </div>
+    
+                        <!-- <div class="col-lg-3 col-md-6 footer-links">
+                            <h3>Our Services</h3>
+                            <ul>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Product Shop Management</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+                            </ul>
+                        </div> -->
+    
+                        <div class="col-4" style="padding-left: 10%;">
+                            <h3>Media Services</h3><br>
+                            <div class="header-social-links d-flex fs-5 text-light">
+                                <ul>
+                                    <i class="text-light bu bi-twitter"></i> <a href="#" class="text-light">Twitter</a><br>
+                                    <i class="text-light bu bi-facebook"></i> <a href="#"
+                                        class="text-light">Facebook</a><br>
+                                    <i class="text-light bu bi-instagram"></i> <a href="#" class="text-light">Instagram</a>
+    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="container-fluid p-4 fs-5">
+    
+                <div class="me-md-auto text-center text-md-start">
+                    <div class="copyright text-center">
+                        &copy; Copyright <strong><span> Jewellery Shop Management</span></strong>. All Rights Reserved
+                    </div>
+    
+    
+                </div>
+    
+    
+            </div>
+    
+    
+        </footer>
+    
+        <!-- Bootstrap core JS-->
+
+
+</body>
+<script src="/static/web/bootCJ/js/bootstrap.min.js"></script>
+<script src="/static/vendor/js/datatables-simple-demo.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</html>
+
+<script type="text/javascript">
+  
+    getData();
+    function getData() {
+
+        var formData = new FormData();
+        formData.append("csrfmiddlewaretoken", $('input[name=csrfmiddlewaretoken]').val());
+
+        $.ajax({
+
+          url: "/get_web_products/",
+          type: "POST",
+          data: formData,
+          processData: false,
+          contentType: false,
+          success: function(response) {
+
+            for(let i = 0; i < response.length; i++) {
+                let imgSub = response[i].ap_image.substring(3);
+
+                $("#products1").append('<div class="col-sm-6 col-md-3 mb-3"> <div class="card card-span text-white"><img class="car-img-top" src="'+imgSub+'" alt="..." height="300"/> <div class="card-body ps-0 bg-200" style="text-align: center;"> <h5 class="fw-bold text-dark">'+response[i].ap_name+'</h5> <div class="fw-bold"><span class="text-primary">Rs. '+response[i].ap_rate+'</span> <br> <a href="/product_details1?id='+response[i].ap_id+'" style="color: red;">View Details</a></div></div> </div></div>');
+            }
+
+          }
+
+        });
+      }
+</script>

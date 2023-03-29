@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Shop Homepage - Start Bootstrap Template</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <style>
+        table {
+            width: 300px;
+            border-collapse: collapse;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            padding-left: 10%;
+            text-align: left;
+        }
+    </style>
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="/static/web/css/styles5.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="/static/web/bootCJ/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/web/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/static/web/css/style1.css">
+
+    <link rel="stylesheet" type="text/css"
+        href="/static/web/bootstrap-icons-1.8.1/bootstrap-icons-1.8.1/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <!-- Navigation-->
+    <section>
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-brand text-outline-danger  fs-2 fw-bold  fst-italic" id="nav1" href="#">Jewellery
+                    <sub>Shop Management</sub>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- e-left s-right x-center -->
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active fs-5 " aria-current="page" href="/index/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  active fs-5" href="/Aboutus/">About Us</a>
+
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active fs-5" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Services
+                            </a>
+                            <ul class="dropdown-menu bg-warning" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="/purity/">Purity</a></li>
+                                <li><a class="dropdown-item" href="/purity/">Quality</a></li>
+                                <li><a class="dropdown-item" href="/purity/">Stylish</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  active fs-5" href="/Gold/">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fs-5" href="/welcome/">Logout</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- Header-->
+    <header class="bg-dark py-5 mt-5" style="background-image: url(/static/web/img/pd.gif); flex: 100%; ">
+        <div class="container px-4 px-lg-5 my-5">
+            <div class="text-center text-white">
+                <h1 class="display-4 fw-bolder">Shop with style</h1>
+                <p class="lead fw-normal text-white-50 mb-0">With this shop hompeage template</p>
+            </div>
+        </div>
+    </header>
+    <!-- Section-->
+    <section class="py-5" style="background-color: rgb(206, 187, 160);">
+        <div class="container px-4 px-lg-5 mt-5">
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="/static/web/img/ch2.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Chains</h5>
+                                <!-- Product price-->
+                                Rs.40.000 - Rs.80.000
+                            </div>
+                        </div>
+                        <!-- modal -->
+                        <!-- Button trigger modal -->
+
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content" style="background-color: rgb(229, 216, 156);">
+                                    <div class="modal-header" style="background-color: rgb(57, 18, 18);">
+                                        <h5 class="modal-title text-warning fst-italic" id="exampleModalLabel">Product
+                                            View</h5>
+                                        <button type="button" class="btn-close btn-warning" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row align-items-center rounded-3">
+                                            <img src="/static/web/img/ch2.jpg" class="rounded-pill" height="300"
+                                                width="250" alt="">
+                                        </div>
+                                        <div class="row text-center m-4">
+                                            <h2>Necklace</h2>
+                                            <table style="background-color: rgb(222, 224, 193);">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Product Description</th>
+                                                        <th>Amount</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Weight</td>
+                                                        <td>34.000gm</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Westage</td>
+                                                        <td>1.200gm</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Majuri</td>
+                                                        <td>Rs.2.300</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tfoot>
+                                                    <tr>
+                                                        <th>Total</th>
+                                                        <td>1.68.000</td>
+                                                    </tr>
+                                                </tfoot>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer" style="background-color: rgb(57, 18, 18);">
+                                        <a href="   ">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Open first modal</a> -->
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal1">View options</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale
+                        </div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="/static/web/img/nk4.jpg" width="400" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Necklace</h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                </div>
+                                <!-- Product price-->
+                                <span class="text-muted text-decoration-line-through">Rs.1.20.000</span>
+                                Rs.1.80.000
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <!-- Modal 2-->
+                        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content" style="background-color: rgb(229, 216, 156);">
+                                    <div class="modal-header" style="background-color: rgb(57, 18, 18);">
+                                        <h5 class="modal-title text-warning fst-italic" id="exampleModalLabel">Product
+                                            View</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row align-items-center rounded-3">
+                                            <img src="/static/web/img/nk4.jpg" class="rounded-pill" height="300"
+                                                width="250" alt="">
+                                        </div>
+                                        <div class="row text-center m-4">
+                                            <h2>Necklace</h2>
+                                            <table style="background-color: rgb(222, 224, 193);">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Product Description</th>
+                                                        <th>Amount</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Weight</td>
+                                                        <td>25.000gm</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Westage</td>
+                                                        <td>890 ml</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Majuri</td>
+                                                        <td>Rs.1600</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tfoot>
+                                                    <tr>
+                                                        <th>Total</th>
+                                                        <td>1.46.000</td>
+                                                    </tr>
+                                                </tfoot>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer" style="background-color: rgb(57, 18, 18);">
+                                        <a href="   ">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Open first modal</a> -->
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal2">View options</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale
+                        </div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="/static/web/img/nk8.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Necklace</h5>
+                                <!-- Product price-->
+                                <span class="text-muted text-decoration-line-through"></span>
+                                Rs. 1.80.000
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content" style="background-color: rgb(229, 216, 156);">
+                                    <div class="modal-header" style="background-color: rgb(57, 18, 18);">
+                                        <h5 class="modal-title text-warning fst-italic" id="exampleModalLabel">Product
+                                            View</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row align-items-center rounded-3">
+                                            <img src="/static/web/img/nk8.jpg" class="rounded-pill" height="300"
+                                                width="250" alt="">
+                                        </div>
+                                        <div class="row text-center m-4">
+                                            <h2>Necklace</h2>
+                                            <table style="background-color: rgb(222, 224, 193);">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Product Description</th>
+                                                        <th>Amount</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Weight</td>
+                                                        <td>34.000gm</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Westage</td>
+                                                        <td>1.200gm</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Majuri</td>
+                                                        <td>Rs.2.300</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tfoot>
+                                                    <tr>
+                                                        <th>Total</th>
+                                                        <td>1.68.000</td>
+                                                    </tr>
+                                                </tfoot>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer" style="background-color: rgb(57, 18, 18);">
+                                        <a href="   ">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Open first modal</a> -->
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal3">View options</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="/static/web/img/brs4.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Bangles</h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                </div>
+                                <!-- Product price-->
+                                Rs.1.40.000
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content" style="background-color: rgb(229, 216, 156);">
+                                    <div class="modal-header" style="background-color: rgb(57, 18, 18);">
+                                        <h5 class="modal-title text-warning fst-italic" id="exampleModalLabel">Product
+                                            View</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row align-items-center rounded-3">
+                                            <img src="/static/web/img/brs4.jpg" class="rounded-pill" height="300"
+                                                width="250" alt="">
+                                        </div>
+                                        <div class="row text-center m-4">
+                                            <h2>Necklace</h2>
+                                            <table style="background-color: rgb(222, 224, 193);">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Product Description</th>
+                                                        <th>Amount</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Weight</td>
+                                                        <td>34.000gm</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Westage</td>
+                                                        <td>1.200gm</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Majuri</td>
+                                                        <td>Rs.2.300</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tfoot>
+                                                    <tr>
+                                                        <th>Total</th>
+                                                        <td>1.68.000</td>
+                                                    </tr>
+                                                </tfoot>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer" style="background-color: rgb(57, 18, 18);">
+                                        <a href="   ">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Open first modal</a> -->
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal4">View options</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale
+                        </div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="/static/web/img/cp3.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder"> Daimond Ring</h5>
+                                <!-- Product price-->
+                                <span class="text-muted text-decoration-line-through">Rs.1.50.000</span>
+                                Rs.1.25.000
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content" style="background-color: rgb(229, 216, 156);">
+                                    <div class="modal-header" style="background-color: rgb(57, 18, 18);">
+                                        <h5 class="modal-title text-warning fst-italic" id="exampleModalLabel">Product
+                                            View</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row align-items-center rounded-3">
+                                            <img src="/static/web/img/cp3.jpg" class="rounded-pill" height="300"
+                                                width="250" alt="">
+                                        </div>
+                                        <div class="row text-center m-4">
+                                            <h2>Necklace</h2>
+                                            <table style="background-color: rgb(222, 224, 193);">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Product Description</th>
+                                                        <th>Amount</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Weight</td>
+                                                        <td>34.000gm</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Westage</td>
+                                                        <td>1.200gm</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Majuri</td>
+                                                        <td>Rs.2.300</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tfoot>
+                                                    <tr>
+                                                        <th>Total</th>
+                                                        <td>1.68.000</td>
+                                                    </tr>
+                                                </tfoot>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer" style="background-color: rgb(57, 18, 18);">
+                                        <a href="   ">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Open first modal</a> -->
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal5">View options</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="/static/web/img/nk3.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Fancy Necklace</h5>
+                                <!-- Product price-->
+                                Rs.1.20.000 - Rs.2.80.000
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content" style="background-color: rgb(229, 216, 156);">
+                                    <div class="modal-header" style="background-color: rgb(57, 18, 18);">
+                                        <h5 class="modal-title text-warning fst-italic" id="exampleModalLabel">Product
+                                            View</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row align-items-center rounded-3">
+                                            <img src="/static/web/img/nk3.jpg" class="rounded-pill" height="300"
+                                                width="250" alt="">
+                                        </div>
+                                        <div class="row text-center m-4">
+                                            <h2>Necklace</h2>
+                                            <table style="background-color: rgb(222, 224, 193);">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Product Description</th>
+                                                        <th>Amount</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Weight</td>
+                                                        <td>34.000gm</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Westage</td>
+                                                        <td>1.200gm</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Majuri</td>
+                                                        <td>Rs.2.300</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tfoot>
+                                                    <tr>
+                                                        <th>Total</th>
+                                                        <td>1.68.000</td>
+                                                    </tr>
+                                                </tfoot>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer" style="background-color: rgb(57, 18, 18);">
+                                        <a href="   ">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Open first modal</a> -->
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal6">View options</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale
+                        </div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="/static/web/img/nk1.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Necklace</h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                </div>
+                                <!-- Product price-->
+                                <span class="text-muted text-decoration-line-through">Rs. 1.56.000 </span>
+                                Rs. 1.67.000
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content" style="background-color: rgb(229, 216, 156);">
+                                    <div class="modal-header" style="background-color: rgb(57, 18, 18);">
+                                        <h5 class="modal-title text-warning fst-italic" id="exampleModalLabel">Product
+                                            View</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row align-items-center rounded-3">
+                                            <img src="/static/web/img/nk1.jpg" class="rounded-pill" height="300"
+                                                width="250" alt="">
+                                        </div>
+                                        <div class="row text-center m-4">
+                                            <h2>Necklace</h2>
+                                            <table style="background-color: rgb(222, 224, 193);">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Product Description</th>
+                                                        <th>Amount</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Weight</td>
+                                                        <td>34.000gm</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Westage</td>
+                                                        <td>1.200gm</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Majuri</td>
+                                                        <td>Rs.2.300</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tfoot>
+                                                    <tr>
+                                                        <th>Total</th>
+                                                        <td>1.68.000</td>
+                                                    </tr>
+                                                </tfoot>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer" style="background-color: rgb(57, 18, 18);">
+                                        <a href="   ">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Open first modal</a> -->
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal7">View options</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="/static/web/img/cp7.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Couple Rings</h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                </div>
+                                <!-- Product price-->
+                                Rs.1.40.000
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content" style="background-color: rgb(229, 216, 156);">
+                                    <div class="modal-header" style="background-color: rgb(57, 18, 18);">
+                                        <h5 class="modal-title text-warning fst-italic" id="exampleModalLabel">Product
+                                            View</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row align-items-center rounded-3">
+                                            <img src="/static/web/img/cp7.jpg" class="rounded-pill" height="300"
+                                                width="250" alt="">
+                                        </div>
+                                        <div class="row text-center m-4">
+                                            <h2>Necklace</h2>
+                                            <table style="background-color: rgb(222, 224, 193);">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Product Description</th>
+                                                        <th>Amount</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Weight</td>
+                                                        <td>34.000gm</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Westage</td>
+                                                        <td>1.200gm</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Majuri</td>
+                                                        <td>Rs.2.300</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tfoot>
+                                                    <tr>
+                                                        <th>Total</th>
+                                                        <td>1.68.000</td>
+                                                    </tr>
+                                                </tfoot>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer" style="background-color: rgb(57, 18, 18);">
+                                        <a href="   ">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Open first modal</a> -->
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal8">View options</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer-->
+    <footer id="footer">
+
+        <div class="footer-top">
+            <div class="container align-items-center">
+                <div class="row">
+
+                    <div class="col-4" style="padding-left: 10%;">
+                        <h3>Company</h3>
+                        <p>
+                            Info <br>
+                            Belagavi <br><br>
+                            <strong>Phone:</strong> +91 123456789<br>
+                            <strong>Email:</strong> info.com<br>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-4  footer-links mb-2 pb-5" style="padding-left: 10%;">
+                        <h3>Useful Links</h3>
+                        <ul class="pt-4">
+                            <li><i class="bx bx-chevron-right"></i> <a href="/index/">Home</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="/Aboutus/">About us</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="/purity/">Services</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="/Aboutus/">Terms of service</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- <div class="col-lg-3 col-md-6 footer-links">
+                        <h3>Our Services</h3>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Product Shop Management</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+                        </ul>
+                    </div> -->
+
+                    <div class="col-4" style="padding-left: 10%;">
+                        <h3>Media Services</h3><br>
+                        <div class="header-social-links d-flex fs-5 text-light">
+                            <ul>
+                                <i class="text-light bu bi-twitter"></i> <a href="#" class="text-light">Twitter</a><br>
+                                <i class="text-light bu bi-facebook"></i> <a href="#"
+                                    class="text-light">Facebook</a><br>
+                                <i class="text-light bu bi-instagram"></i> <a href="#" class="text-light">Instagram</a>
+
+
+                            </ul>
+
+
+
+
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid p-4 fs-5">
+
+            <div class="me-md-auto text-center text-md-start">
+                <div class="copyright text-center">
+                    &copy; Copyright <strong><span> Jewellery Shop Management</span></strong>. All Rights Reserved
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </footer>
+
+    <!-- Bootstrap core JS-->
+
+
+
+</body>
+<script src="/static/web/bootCJ/js/bootstrap.min.js"></script>
+<script src="/static/vendor/js/datatables-simple-demo.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="/static/web/js/scripts5.js"></script>
+
+</html>

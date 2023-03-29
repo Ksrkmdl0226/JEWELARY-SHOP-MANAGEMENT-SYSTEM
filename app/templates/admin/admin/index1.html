@@ -1,0 +1,198 @@
+{% csrf_token %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Dashboard - SB Admin</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="/static/admin/css/style1.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/admin/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
+
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="sb-nav-fixed">
+    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+        <!-- Navbar Brand-->
+        <a class="navbar-brand ps-3" href="/adminin/">Admin Dashboard</a>
+        <!-- Sidebar Toggle-->
+        <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i
+                class="fas fa-bars"></i></button>
+        <!-- Navbar Search-->
+        <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+            
+        </form>
+        <!-- Navbar-->
+        <!-- Navbar-->
+        <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">ADMIN<img class="img-profile m-2 rounded-circle" src="/static/web/img/profile.jpg" height="40" width="40"></a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="/signin/">Sign In</a></li>
+
+                    <li><a class="dropdown-item" href="/welcome/">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_nav">
+            <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                <div class="sb-sidenav-menu">
+                    <div class="nav">
+                        <div class="sb-sidenav-menu-heading">Core</div>
+                        <a class="nav-link" href="/adminin/">
+                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            Admin
+                        </a>
+                        
+                        <div class="sb-sidenav-menu-heading">Interface</div>
+                        <a class="nav-link" href="/productad/">
+                            <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                            Products
+                        </a>
+                        <a class="nav-link" href="/cateadd/">
+                            <div class="sb-nav-link-icon"><i class="fas fa-gear"></i></div>
+                            Category
+                        </a>
+                        <a class="nav-link" href="/orderadd/">
+                            <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                            Orders
+                        </a>
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+        <div id="layoutSidenav_content">
+            <main>
+                <div class="container-fluid px-4">
+
+
+                    <div class="card mb-4">
+                        <div class="card-header fs-5">
+                            <i class="fas fa-table me-1 "></i>
+                            Admin Table
+                        </div>
+
+                        <div class="card-body">
+                            <!-- Button trigger modal -->
+                            <!-- <button type="button" class="btn btn-danger text-center mb-4" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Add
+                            </button> -->
+
+                            <!-- <! add -- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Table Content</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form class="form-inline">
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label>Photo <span class="text-danger">*</span></label>
+                                                        <input type="file" class="form-control" id="filePhoto">
+                                                    </div>
+                                                </div>
+                                                <div class="mb-6">
+                                                    <label>Category Name</label>
+                                                    <input type="text" id="txtName1" class="form-control"
+                                                        style="width:100%;" required="required" />
+                                                </div>
+                                                <!-- <div class="mb-6">
+                                                 <label>Product Name</label>
+                                                 <input type="text" id="txtPrice" class="form-control"
+                                                     style="width:100%;" required="required" />
+                                             </div> -->
+
+
+
+                                            </form>
+                                            <br />
+                                            <div id="result"></div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <div class="mb-3">
+                                                <button type="button" id="" class="btn btn-dark"
+                                                    data-bs-dismiss="modal">Close</button>
+                                            </div>
+
+
+                                            <div class="mb-3">
+                                                <button type="button" id="create" class="btn btn-danger">Add</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="table-responsive">
+                                <table class="table table-bordered text-center align-items-center" id="tableData"
+                                    width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr style="background-color: #5f1111; color: white;" class="text-center">
+                                            <th>Sl No</th>
+                                            <th style="display: none;">ID</th>
+                                            <th>Admin Photo</th>
+                                            <th>Admin Name</th>
+                                            <th>Email</th>
+                                            <th>Role</th>
+                                            <!-- <th>Product Name</th> -->
+                                            
+                                        </tr>
+                                    </thead>
+
+                                    <tbody id="tableData">
+
+                                    <tbody class="text-center align-items-center ">
+                                        <tr>
+                                            <td>1</td>
+                                            <td><img src="/static/web/img/ad1.jpeg" alt="" height="150" width="200">
+                                            </td>
+                                            <td>Krishna Kurdekar</td>
+                                            <td>admin@gmail.com</td>
+                                            <td>Admin</td>
+                                            
+                                        </tr>
+                                       
+                                    </tbody>
+                                </table>
+                            </div>
+
+            </main>
+            <footer class="py-4 bg-light mt-auto">
+                <div class="container-fluid px-4">
+                    <div class="d-flex align-items-center justify-content-between small">
+                      
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <script src="/static/admin/js/scripts.js"></script>
+    <script src="/static/admin/js/datatables-simple-demo.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+    <script src="assets/demo/chart-area-demo.js"></script>
+    <script src="assets/demo/chart-bar-demo.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

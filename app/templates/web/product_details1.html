@@ -1,0 +1,311 @@
+{% csrf_token %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="/static/web/bootCJ/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/web/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/static/web/css/style1.css">
+    <link rel="stylesheet" type="text/css" href="/static/web/bootstrap-icons-1.8.1/bootstrap-icons-1.8.1/bootstrap-icons.css">
+
+
+    <title>Aboutus</title>
+</head>
+
+<section>
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-brand text-outline-danger  fs-2 fw-bold  fst-italic" id="nav1" href="#">Jewellery
+                <sub>Shop Management</sub>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- e-left s-right x-center -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active fs-5 " aria-current="page" href="/index/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  active fs-5" href="/Aboutus/">About Us</a>
+
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active fs-5" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Services
+                        </a>
+                        <ul class="dropdown-menu bg-warning" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="/purity/">Purity</a></li>
+                            <li><a class="dropdown-item" href="/purity/">Quality</a></li>
+                            <li><a class="dropdown-item" href="/purity/">Stylish</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  active fs-5" href="/Gold/">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fs-5" href="/welcome/">Logout</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</section>
+<section>
+    <div class="cont row p-5   rounded-3 ">
+        <div class="col-6 container pt-5">
+            <img src="/static/web/img/cm1.jpg" alt="" height="400" width="600" id="image">
+        </div>
+        <div class="col-6 container py-5"><br>
+            <h1 class="display-5 fw-bold fst-italic" id="productName">Product Name</h1>
+            <p class="txt1 col-md-8 fs-5 text-capitalize" id="productDesc">Indias number one gold and daimond fancy jewellary company
+                in 2022.</p>
+            <p class="fs-3" id="productPrice">₹ 0.00</p>
+            <div>
+                <select id="selQTY">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                &emsp;
+                <span class="item_price" id="txtTotalAmt" style="position: relative; ">₹0.00</span>
+            </div>
+            <div>
+                
+            </div>
+            
+            
+            <button class="btn btn-warning btn-lg mt-3 text-white" type="button" id="cart">Cart</button>
+            <button class="btn btn-warning btn-lg mt-3 text-white" type="button" id="checkout">checkout</button>
+        </div>
+    </div>
+<input type="hidden" id="txtID" value="{{request.GET.id}}">
+</section>
+
+<footer id="footer">
+
+    <div class="footer-top">
+        <div class="container align-items-center">
+            <div class="row">
+
+                <div class="col-4" style="padding-left: 10%;">
+                    <h3>Company</h3>
+                    <p>
+                        Info <br>
+                        Belagavi <br><br>
+                        <strong>Phone:</strong> +91 123456789<br>
+                        <strong>Email:</strong> info.com<br>
+                    </p>
+                </div>
+
+                <div class="col-lg-4  footer-links mb-2 pb-5" style="padding-left: 10%;">
+                    <h3>Useful Links</h3>
+                    <ul class="pt-4">
+                        <li><i class="bx bx-chevron-right"></i> <a href="/index/">Home</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="/Aboutus/">About us</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="/purity/">Services</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="/Aboutus/">Terms of service</a></li>
+                    </ul>
+                </div>
+
+                <!-- <div class="col-lg-3 col-md-6 footer-links">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Product Shop Management</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+                    </ul>
+                </div> -->
+
+                <div class="col-4" style="padding-left: 10%;">
+                    <h3>Media Services</h3><br>
+                    <div class="header-social-links d-flex fs-5 text-light">
+                        <ul>
+                            <i class="text-light bu bi-twitter"></i> <a href="#" class="text-light">Twitter</a><br>
+                            <i class="text-light bu bi-facebook"></i> <a href="#"
+                                class="text-light">Facebook</a><br>
+                            <i class="text-light bu bi-instagram"></i> <a href="#" class="text-light">Instagram</a>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid p-4 fs-5">
+
+        <div class="me-md-auto text-center text-md-start">
+            <div class="copyright text-center">
+                &copy; Copyright <strong><span> Jewellery Shop Management</span></strong>. All Rights Reserved
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<script src="/static/web/bootCJ/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</body>
+
+</html>
+
+<script type="text/javascript">
+
+    getData();
+    function getData() {
+
+        let formData = new FormData();
+
+        formData.append("csrfmiddlewaretoken", $('input[name=csrfmiddlewaretoken]').val());
+        formData.append("txtID", $("#txtID").val());
+        $.ajax({
+
+          url: "/get_single_item/",
+          type: "POST",
+          data: formData,
+          processData: false,
+          contentType: false,
+          success: function(response) {
+
+            for(let i = 0; i < response.length; i++) {
+               var imgSub = response[i].ap_image.substring(3);
+
+                $("#productName").text(response[0].ap_name);
+                $("#category").html(response[0].ap_type);
+                $("#productPrice").text("₹"+response[0].ap_rate);
+                $("#productDesc").text(response[0].ap_description);
+                $("#txtTotalAmt").text("₹"+response[0].ap_rate);
+                $("#image").attr("src", imgSub);
+
+                
+            }
+
+          }
+
+        });
+    }
+
+        $("#selQTY").change(function() {
+            var lclAmt = ($("#productPrice").text().trim()).substring(1);
+            var lclTotalAmt = ($("#selQTY").val() * lclAmt).toFixed(2);
+            // alert(lclTotalAmt);
+            $("#txtTotalAmt").text("₹"+lclTotalAmt);
+        });
+
+        $("#cart").click(function() {
+
+            var formData = new FormData();
+            var lclAmt = ($("#txtTotalAmt").text().trim()).substring(1);
+            formData.append("csrfmiddlewaretoken", $('input[name=csrfmiddlewaretoken]').val());
+            formData.append("selQTY", $("#selQTY").val());
+            formData.append("txtTotalAmt", parseInt(lclAmt));
+            formData.append("txtID", $("#txtID").val());
+
+            $.ajax({
+              beforeSend: function () {
+                // $(".btn .spinner-border").show();
+                $("#cart").attr("disabled", true);
+              },
+              url: "/add_cart/",
+              type: "POST",
+              data: formData,
+              processData: false,
+              contentType: false,
+              success: function (result) {
+                  if(result == '0') {
+                    window.location = "/register/";
+                  } else {
+                    window.location = "/cart/";
+                  }
+                  
+              },
+              error: function (request, error) {
+                console.error(error);
+              },
+              complete: function () {
+                // $(".btn .spinner-border").hide();
+                $("#cart").attr("disabled", false);
+              },
+            });
+        });
+
+
+        $("#checkout").click(function() {
+
+            var formData = new FormData();
+            formData.append("csrfmiddlewaretoken", $('input[name=csrfmiddlewaretoken]').val());
+            formData.append("selQTY", $("#selQTY").val());
+            formData.append("txtID", $("#txtID").val());
+            let result1 = $("#txtID").val();
+            $.ajax({
+              beforeSend: function () {
+                // $(".btn .spinner-border").show();
+                $("#btn_submit").attr("disabled", true);
+              },
+              url: "/check_checkout/",
+              type: "POST",
+              data: formData,
+              processData: false,
+              contentType: false,
+              success: function (result) {
+                  if(result == '0') {
+                    window.location = "/register/";
+                  } else {
+                    window.location = "/check_out/?id="+result1+"&qty="+$("#selQTY").val();
+                  }
+                  
+              },
+              error: function (request, error) {
+                console.error(error);
+              },
+              complete: function () {
+                // $(".btn .spinner-border").hide();
+                $("#btn_submit").attr("disabled", false);
+              },
+            });
+        });
+
+        // getData1();
+        function getData1() {
+
+            let formData = new FormData();
+            formData.append("csrfmiddlewaretoken", $('input[name=csrfmiddlewaretoken]').val());
+
+            $.ajax({
+
+              url: "/get_home_details/",
+              type: "POST",
+              data: formData,
+              processData: false,
+              contentType: false,
+              success: function(response) {
+
+                for(let i = 0; i < response.length; i++) {
+                    let imgSub = response[i].ap_image.substring(3);
+
+                    $("#products").append('<div class="col-lg-3 col-md-6 col-sm-6"> <div class="product__item"> <div class="product__item__pic set-bg" data-setbg="'+imgSub+'" style="background-image: url('+imgSub+');"> <div class="product__label"> <span>'+response[i].ap_type+'</span> </div></div><div class="product__item__text"> <h6><a href="#">'+response[i].ap_name+'</a></h6> <div class="product__item__price">₹ '+response[i].ap_rate+'</div><div class="cart_add"> <a href="/single?id='+response[i].ap_id+'">Buy</a> </div></div></div></div>');
+                }
+
+              }
+
+            });
+        }
+
+
+</script>
